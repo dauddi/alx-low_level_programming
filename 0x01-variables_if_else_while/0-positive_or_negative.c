@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  *main - number stored in the variable n is positive or negative.
- *Return: 0
+ *Return: 0 //success
  */
 int checkForPositivity(int n);
 int main(void)
@@ -16,6 +16,8 @@ int main(void)
 	checkForPositivity(n);
 	return (0);
 }
+
+/*checkForPositivity function to check if the n is positive or negetive*/
 
 int checkForPositivity(int n)
 {
