@@ -1,8 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 #include <stdio.h>
-/* betty style doc for function main goes there */
+/**
+ *main - number stored in the variable n is positive or negative.
+ *Return: 0
+ */
 int checkForPositivity(int n);
 int main(void)
 {
@@ -10,7 +12,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
+
 	checkForPositivity(n);
 	return (0);
 }
