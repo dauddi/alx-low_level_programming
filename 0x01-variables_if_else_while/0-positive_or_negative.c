@@ -2,11 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 
-/**
- * checkForPositivity - function to check if the n is positive or negetive
- * n - is a parameter to represent user's input(+ve or -ve)
+/*
+ * checkForPositivity : function to check if the n is positive or negetive
+ * int n : is a parameter to represent user's input(+ve or -ve)
  * main - number stored in the variable n is positive or negative.
- * Return: 0 //success
+ * Return: 0 //success.
  */
 
 int checkForPositivity(int n);
@@ -21,7 +21,10 @@ int main(void)
 	return (0);
 }
 
-/*checkForPositivity function to check if the n is positive or negetive*/
+/*
+ * checkForPositivity : function to check if the n is positive or negetive
+ * int n : is a parameter to represent user's input(+ve or -ve)
+ */
 
 int checkForPositivity(int n)
 {
