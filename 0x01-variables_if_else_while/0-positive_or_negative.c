@@ -2,8 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 /**
- *main - number stored in the variable n is positive or negative.
- *Return: 0 //success
+ * main - number stored in the variable n is positive or negative.
+ * n - is a parameter to represent user's input(+ve or -ve)
+ * checkForPositivity function to check if the n is positive or negetive
+ * Return: 0 //success
  */
 int checkForPositivity(int n);
 int main(void)
