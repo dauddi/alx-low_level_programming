@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	int x , y;
+	int x, y;
 
 	for (x = '0'; x <= '9'; x++)
 	{
@@ -18,13 +18,13 @@ int main(void)
 			if (x < y)
 			{
 				putchar(x);
-			        putchar(y);
+				putchar(y);
 
-			        if (!(x == '8' && y == '9'))
-			        {
-			    	        putchar(',');
-			      	        putchar(' ');
-			        }
+				if (!(x == '8' && y == '9'))
+				{
+			    		putchar(',');
+			      		putchar(' ');
+				}
 			}
 		}
 	}
