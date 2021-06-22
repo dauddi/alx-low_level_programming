@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- *main - number stored in the variable n is positive or negative.
- *Return: 0
+ *print_alphabet - prinnts the alphabet followed by a newline
+ *Return: void.
  */
 
 void print_alphabet(void)
@@ -14,6 +14,4 @@ void print_alphabet(void)
 		_putchar(chr);
 	}
 	_putchar('\n');
-
-	return;
 }
