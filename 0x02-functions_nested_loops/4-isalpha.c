@@ -3,7 +3,7 @@
 /**
  *_isalpha - checks for alphabetic characters
  * @c: user input to be checked
- * 
+ *
  *Return: 1 or 0.
  */
 
