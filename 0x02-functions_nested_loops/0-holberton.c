@@ -12,7 +12,7 @@
 
 int main(void)
 {
-	char str[] = "Holberton", newLine;
+	char str[] = "Holberton", newLine = '\n';
 	
 	int i, len; 
 
