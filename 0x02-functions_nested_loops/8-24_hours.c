@@ -17,10 +17,10 @@ void jack_bauer(void)
 	do
 	{
 		checkDigits(h);
-		_putchar(h);
+		_putchar(h +'0');
 		_putchar(':');
 		checkDigits(m);
-		_putchar(m);
+		_putchar(m + '0');
 		_putchar('\n');
 
 		if (m == 60)
@@ -37,5 +37,4 @@ void checkDigits(char h)
 	{
 		_putchar('0');
 	}
-	return;
 }
