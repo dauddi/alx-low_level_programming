@@ -28,7 +28,7 @@ void jack_bauer(void)
 			h++;
 			m -= 59;
 		}
-	}while(h < 23 && m != 59)
+	}while(h < 23 && m != 59);
 }
 
 void checkDigits(char h)
