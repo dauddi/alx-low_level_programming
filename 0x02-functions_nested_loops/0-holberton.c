@@ -13,8 +13,10 @@
 int main(void)
 {
 	char str[] = "Holberton", newLine;
+	
+	int i, len; 
 
-	for (int i = 0, len = strlen(str); i < len; i++)
+	for (i = 0, len = strlen(str); i < len; i++)
 	{
 		_putchar(str[i]);
 	}
