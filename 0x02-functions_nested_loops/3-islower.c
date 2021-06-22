@@ -2,7 +2,7 @@
 
 /**
  *_islower - checks for lowercase characters
- *c - user input
+ *int c - user input as an integer value
  * Return: 1 or 0.
  */
 
