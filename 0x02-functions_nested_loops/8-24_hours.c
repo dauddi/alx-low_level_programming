@@ -1,8 +1,10 @@
 #include "holberton.h"
 
 /**
- *print_last_digit - prints the last digit of a number
- * @n: user input to be computed
+ *jack_bauer - prints time from 00:00 to 23:53
+ *
+ * checkDigits - checks number of digits
+ * @h: input to chechDigits function
  *
  *Return: 1, -1 or 0.
  */
@@ -14,13 +16,12 @@ void jack_bauer(void)
 	char h = 0;
 	char m = 0;
 
-	do
-	{
+	do {
 		checkDigits(h);
-		_putchar(h +'0');
+		_putchar(h);
 		_putchar(':');
 		checkDigits(m);
-		_putchar(m + '0');
+		_putchar(m);
 		_putchar('\n');
 
 		m++;
@@ -30,7 +31,7 @@ void jack_bauer(void)
 			h++;
 			m -= 59;
 		}
-	}while(h < 23 && m != 59);
+	} while (h < 23 && m != 59);
 }
 
 void checkDigits(char h)
