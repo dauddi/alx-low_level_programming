@@ -1,12 +1,22 @@
-#include <stdio.h>
+#include <holberton.h>
+#include <string.h>
 
 /**
- *main - number stored in the variable n is positive or negative.
- *Return: 0
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 
 int main(void)
 {
-    printf("Holberton\n");
-    return (0);
+	char str[] = "Holberton", newLine;
+
+	for (int i = 0, len = strlen(str); i < len; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar(newLine);
+	return (0);
 }
