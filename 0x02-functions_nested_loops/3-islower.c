@@ -2,7 +2,8 @@
 
 /**
  *_islower - checks for lowercase characters
- *@c - user input as an integer value
+ *@c: user input to be checked
+ *
  * Return: 1 or 0.
  */
 
