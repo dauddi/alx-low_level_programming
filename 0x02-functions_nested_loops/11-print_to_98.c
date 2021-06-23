@@ -20,6 +20,10 @@ void print_to_98(int n)
 			{
 				printf(", ");
 			}
+			else
+			{
+				printf("\n");
+			}
 		}
 		
 	}
@@ -31,6 +35,10 @@ void print_to_98(int n)
 			if (n != 98)
 			{
 				printf(", ");
+			}
+			else
+			{
+				printf("\n");
 			}
 		}
 		
