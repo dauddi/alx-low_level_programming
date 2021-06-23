@@ -13,7 +13,7 @@ int sumMultiples(int n);
 
 int main(void)
 {
-	int n = 10;
+	int n = 1024;
 	
 	sumMultiples(n);
 
