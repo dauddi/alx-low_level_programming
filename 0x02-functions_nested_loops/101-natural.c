@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
- *sumMultiples - computes sum of all mulpiples of 3 and 5
- * main - main function
- * 
+ *
+ * main - prints sum of multiples
+ *
+ * sumMultiples - computes sum of all mulpiples of 3 and 5
+ *
  * @n: user input
  *
  *Return: Always 0
@@ -14,7 +16,7 @@ int sumMultiples(int n);
 int main(void)
 {
 	int n = 1024;
-	
+
 	sumMultiples(n);
 
 	return (0);
