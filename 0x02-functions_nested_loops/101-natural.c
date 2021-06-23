@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 /**
+ * sumMultiples - computes sum of all mulpiples of 3 and 5
+ *
  * main - prints sum of multiples
  *
  * sumMultiples - computes sum of all mulpiples of 3 and 5
