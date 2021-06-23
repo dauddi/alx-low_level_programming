@@ -16,6 +16,8 @@ int main(void)
 	int n = 10;
 	
 	sumMultiples(n);
+
+	return (0);
 }
 
 int sumMultiples(int n)
