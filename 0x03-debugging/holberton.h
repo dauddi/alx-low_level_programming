@@ -1,16 +1,11 @@
-#include <stdlib.h>
-#include <time.h>
-/**
- *positive_or_negative - function to be tested
- *@n - user input
- *
- */
+#ifndef HOLBERTON_H
+#define HOLBERTON_H
 
-/* betty style doc for function main goes there */
-int positive_or_negative(int n)
-{
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-	return (0);
-}
+#include <stdio.h>
+
+int largest_number(int a, int b, int c);
+void positive_or_negative(int i);
+void print_remaining_days(int month, int day, int year);
+int convert_day(int month, int day);
+
+#endif /* HOLBERTON_H */
