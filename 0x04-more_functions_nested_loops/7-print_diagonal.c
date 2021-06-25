@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *print_line - prints straight line
+ *print_line - prints diagonal line
  *@n - defines the length of the line
  * 
  *Return: void.
@@ -15,10 +15,10 @@ void print_diagonal(int n)
 	{
 		for (x = n; x > 0; x--)
 		{
-			_putchar(' ');
-
+			_putchar(32);
 		}
-		_putchar('\\');
+		_putchar(92);
+		_putchar('\n');
 	}
 	else 
 		_putchar('\n');
