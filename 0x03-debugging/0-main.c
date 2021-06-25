@@ -2,8 +2,7 @@
 
 /**
  * main - tests the positive_negative function
- *
- * return 0 always
+ * Return: Always 0
  */
 
 int main(void)
