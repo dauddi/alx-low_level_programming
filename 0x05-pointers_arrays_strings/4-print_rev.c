@@ -9,17 +9,17 @@
 
 int _strlen(char *s);
 
-void _puts(char *str)
+void print_rev(char *s)
 {
 	int i, length;
 
 	char chr;
 
-	length = _strlen(str);
+	length = _strlen(s);
 
 	for (i = length; i > 0; i--)
 	{
-		chr = str[i];
+		chr = s[i];
 		_putchar(chr);
 	}
 	_putchar('\n');
