@@ -15,6 +15,8 @@ void _puts(char *str)
 {
 	int i, length;
 
+	char chr;
+
 	length = _strlen(str);
 
 	for (i = 0; i < length; i++)
