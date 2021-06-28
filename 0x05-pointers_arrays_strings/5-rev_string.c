@@ -16,6 +16,8 @@ void print_rev(char *s);
 void rev_string(char *s)
 {
 	s = print_rev(s);
+
+	return;
 }
 
 void print_rev(char *s)
