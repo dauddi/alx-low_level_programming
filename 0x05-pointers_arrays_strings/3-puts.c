@@ -1,7 +1,5 @@
 #include "holberton.h"
 /**
- * _strlen - returns length of string
- * @s: input string
  * _puts - prints a string to stdout
  * @str: array of chars,, string.
  * _strlen - returns length of string
