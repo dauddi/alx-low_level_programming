@@ -29,12 +29,12 @@ void _puts(char *str)
 
 int _strlen(char *s)
 {
-        int i, count = 0;
+       int i, count = 0;
 
-        for (i = 0; s[i] != '\0'; i++)
-        {
-                count++;
-        }
-        return (count);
+       for (i = 0; s[i] != '\0'; i++)
+       {
+               count++;
+       }
+       return (count);
 }
 
