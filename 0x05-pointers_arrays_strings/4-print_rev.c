@@ -2,8 +2,8 @@
 /**
  * _strlen - returns length of string
  * @s: input string
- * _puts - prints a string to stdout
- * @str: array of chars
+ * print_rev - prints a string to stdout
+ * @s: array of chars
  * Return: void
  */
 
