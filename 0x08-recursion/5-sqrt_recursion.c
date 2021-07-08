@@ -1,34 +1,33 @@
 #include "holberton.h"
-
 /**
- * _sqrt_recursion - returns a natural squareroot of a number
- *@n:integer
- * Return: square root of n
+ * increment - helper function
+ * @n: int
+ * @i: int
+ * Return: increment
+ */
+int increment(int n, int i)
+{
+	if (i * i > n)
+	{
+		return (-1);
+	}
+	if (i * i == n)
+	{
+		return (i);
+	}
+	return (increment(n, i + 1));
+}
+/**
+ * _sqrt_recursion - returns natural square root of a number
+ * @n: int
+ * Return: increment
  */
 
 int _sqrt_recursion(int n)
 {
-	int x, y;
-	int *px = &x;
-
-	*px = 1;
-	y = x;
-
-	if (n == 1)
-	{
-		return (1);
-	}
-	else if (y > n / 2)
+	if (n <= 0)
 	{
 		return (-1);
 	}
-	else if (n / y == y)
-	{
-		return (y);
-	}
-	else
-	{
-		*px += 1;
-		return (_sqrt_recursion(n));
-	}
+	return (increment(n, 1));
 }
