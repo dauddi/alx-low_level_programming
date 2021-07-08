@@ -18,11 +18,11 @@ int _sqrt_recursion(int n)
 	{
 		return (1);
 	}
-	else if (y > n/2)
+	else if (y > n / 2)
 	{
 		return (-1);
 	}
-	else if (n/y == y)
+	else if (n / y == y)
 	{
 		return (y);
 	}
