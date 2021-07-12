@@ -14,5 +14,6 @@ int main(int argc, char* argv[])
 	else 
 		printf("0");
 
+	(void)argv;
 	return (0);
 }
