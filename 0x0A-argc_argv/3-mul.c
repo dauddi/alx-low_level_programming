@@ -7,20 +7,40 @@
  * Return: 0
  */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
-	int mult;
+	int i;
+	int mul = 1;
 
-	if (argc != 3)
+	if (argc < 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	else 
+	else
 	{
-		mult = argv[1] * argv[2];
+		for (i = 1; i < argc; i++)
 
-		printf("%d\n", mult);
-		return (0);
+			mul *= atoi(argv[i]);
+		printf("%d\n", mul);
 	}
+	return (0);
 }
+
+// int main(int argc, char* argv[])
+// {
+// 	int mult;
+
+// 	if (argc != 3)
+// 	{
+// 		printf("Error\n");
+// 		return (1);
+// 	}
+// 	else 
+// 	{
+// 		mult = argv[1] * argv[2];
+
+// 		printf("%d\n", mult);
+// 		return (0);
+// 	}
+// }
