@@ -8,39 +8,30 @@
  * Return: 0
  */
 
-int main(int argc, char* argv[])
+int main(int argc, char **argv)
 {
-	int cents = atoi(argv[1]);
-	int count = 0;
-	int arr[] = {25, 10, 5, 2, 1};
-
-	int i;
+	int total, change;
 
 	if (argc != 2)
 	{
-		printf("Error\n");
-		return (1);
+		return (printf("Error\n"), 1);
 	}
 
-	else if (cents <= 0)
+	change = atoi(argv[1]);
+
+	for (total = 0; change > 0; total++)
 	{
-		printf("0\n");
-		return (0);
+		if (change - 25 >= 0)
+			change = change - 25;
+		else if (change - 10 >= 0)
+			change = change - 10;
+		else if (change - 5 >= 0)
+			change = change - 5;
+		else if (change - 2 >= 0)
+			change = change - 2;
+		else if (change - 1 >= 0)
+			change = change - 1;
 	}
-
-	else if (argc == 2)
-	{
-		for (i = 0; i < sizeof(arr); i++)
-		{
-			while (cents > 0 && cents / arr[i] > 0)
-			{
-				cents -= arr[i];
-				count++;
-			}
-		}
-		printf("%d\n", count);
-	}
-
+	printf("%d\n", total);
 	return (0);
-	
 }
