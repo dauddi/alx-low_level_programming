@@ -32,7 +32,7 @@ int main(int argc, char* argv[])
 	{
 		for (i = 0; i < sizeof(arr); i++)
 		{
-			while (cents / arr[i] > 0)
+			while (cents > 0 && cents / arr[i] > 0)
 			{
 				cents -= arr[i];
 				count++;
