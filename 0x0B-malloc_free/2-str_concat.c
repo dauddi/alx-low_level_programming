@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * _strdup - returns memory location for new concatenated string
+ * str_concat - returns memory location for new concatenated string
  *
  * @s1: string one
  * @s2: string two
