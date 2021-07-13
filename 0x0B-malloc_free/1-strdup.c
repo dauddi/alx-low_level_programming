@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "holberton.h"
+#include <string.h>
 
 /**
  * _strdup - returns a ptr to a new memory location, which has a copy of str
