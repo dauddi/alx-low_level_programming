@@ -30,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 
 		for (i = 0; i < len; i++)
 		{
-			if (s1[i] == false)
+			if (s1[i] == NULL)
 				continue;
 			{
 				s3[i] = s1[i];
