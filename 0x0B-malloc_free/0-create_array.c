@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <"holberton.h">
+#include "holberton.h"
 
 /**
  * create_array - creates an array of a spacified size and is populated with a char
