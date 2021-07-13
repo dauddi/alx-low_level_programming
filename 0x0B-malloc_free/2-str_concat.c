@@ -4,46 +4,47 @@
 #include <string.h>
 
 /**
- * _strdup - returns a ptr to a new memory location, which has a copy of str
+ * _strdup - returns memory location for new concatenated string
  *
- * @str: input string to be copied
- *
+ * @s1: string one
+ * @s2: string two
  * Return: A pointer to the array
  */
 
 char *str_concat(char *s1, char *s2)
 {
-	char *s3;
-	unsigned int len = strlen(s1) + strlen(s2) + 1;
+	char *p;
+	int i, j, z, w;
 
-	if (s1 == NULL)
+	if (!s1) /* if is NOT NULL */
 		s1 = "";
-	else if (s2 == NULL)
+	if (!s2) /* if is NOT NULL */
 		s2 = "";
-	{
-		s3 = (char *)malloc(sizeof(char) * len);
-	}
-	if (s3 == NULL)
-		return (NULL);
-	{
-		unsigned int i, j;
 
-		for (i = 0; i < len; i++)
-		{
-			if (s1 == NULL)
-				continue;
-			{
-				s3[i] = s1[i];
+	i = 0;
+	while (s1[i])
+		i++;
 
-				if (i >= strlen(s1))
-				{
-					for (j = 0; j < (strlen(s2) + 1); i++)
-					{
-						s3[i] = s2[j];
-					}
-				}
-			}
-		}
+	j = 0;
+	while (s2[j])
+		j++;
+
+	p = malloc(sizeof(char) * (i + j + 1)); /* + 1 is to put NULL character */
+	if (!p)
+		return ('\0');
+
+	z = 0;
+	while (z < i)
+	{
+		p[z] = s1[z];
+		z++;
 	}
-	return (s3);
+	w = 0;
+	while (z <= (i + j))
+	{
+		p[z] = s2[w];
+		z++;
+		w++;
+	}
+return (p);
 }
